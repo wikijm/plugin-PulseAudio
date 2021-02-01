@@ -56,7 +56,7 @@ class PulseAudio extends eqLogic
 
   public static function dependancy_install()
   {
-    log::add('PulseAudio', 'info', 'Installation des dépéndances PulseAudio');
+    log::add('PulseAudio', 'info', 'Installation des dépendances PulseAudio');
     $resource_path = realpath(dirname(__FILE__) . '/../../3rdparty');
     passthru('/bin/bash ' . $resource_path . '/install.sh ' . $resource_path . ' > ' . log::getPathToLog('PulseAudio_dep') . ' 2>&1 &');
   }
